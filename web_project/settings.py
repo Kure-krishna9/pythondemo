@@ -31,7 +31,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     #'localhost',
     #'127.0.0.1'
-    #'vscode-django-tutorial.azurewebsites.net'  # Sample name only!
+    'pythonsampleanemoi.azurewebsites.net'  # Sample name only!
 ]
 
 # Application definition
@@ -98,11 +98,12 @@ DATABASES = {
         # 'HOST':os.getenv('DATABASE_HOST'),
         # 'PORT':'5432',
         # # 'OPTIONS': {'sslmode': 'require'}
+        
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'user',
         'USER': 'postgres',
-        'PASSWORD': 'root',
-        'HOST': os.getenv('DATABASE_HOST'),
+        'PASSWORD': 'root@123',
+        'HOST': 'pythondemoserver.postgres.database.azure.com',
         'PORT': '5432',
         
     }
