@@ -22,18 +22,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'PLACEHOLDER'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # When deploying to Azure App Service, add you <name>.azurewebsites.net 
 # domain to ALLOWED_HOSTS; you get an error message if you forget. When you add
 # a specific host, you must also add 'localhost' and/or '127.0.0.1' for local
 # debugging (which are enabled by default when ALLOWED_HOSTS is empty.)
-ALLOWED_HOSTS = [
-    'pythonsampleanemoi.azurewebsites.net'
+ALLOWED_HOSTS = ['pythonsampleanemoi.azurewebsites.net']
     #'localhost',
     #'127.0.0.1'
       # Sample name only!
-]
+
 
 # Application definition
 
@@ -86,7 +85,7 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': BASE_DIR / 'db.sqlite3',
         # 'ENGINE': 'django.db.backends.mysql',
-        # 'NAME': 'user',
+        # 'NAME': 'user', 
         # 'USER': 'adminp',
         # 'PASSWORD': 'admin@123',
         # 'HOST': '127.0.0.1',
@@ -102,7 +101,7 @@ DATABASES = {
     
         
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'user',
+        'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'root@123',
         'HOST': 'pythondemoserver.postgres.database.azure.com',
