@@ -31,7 +31,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     #'localhost',
     #'127.0.0.1'
-    'pythonsampleanemoi.azurewebsites.net'  # Sample name only!
+    'https://pythonsampleanemoi.azurewebsites.net'  # Sample name only!
 ]
 
 # Application definition
