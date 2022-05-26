@@ -29,9 +29,10 @@ DEBUG = True
 # a specific host, you must also add 'localhost' and/or '127.0.0.1' for local
 # debugging (which are enabled by default when ALLOWED_HOSTS is empty.)
 ALLOWED_HOSTS = [
+    'https://pythonsampleanemoi.azurewebsites.net'
     #'localhost',
     #'127.0.0.1'
-    'https://pythonsampleanemoi.azurewebsites.net'  # Sample name only!
+      # Sample name only!
 ]
 
 # Application definition
@@ -98,6 +99,7 @@ DATABASES = {
         # 'HOST':os.getenv('DATABASE_HOST'),
         # 'PORT':'5432',
         # # 'OPTIONS': {'sslmode': 'require'}
+    
         
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'user',
@@ -105,6 +107,7 @@ DATABASES = {
         'PASSWORD': 'root@123',
         'HOST': 'pythondemoserver.postgres.database.azure.com',
         'PORT': '5432',
+        'OPTIONS': {'sslmode': 'require'}
         
     }
 }
